@@ -1,3 +1,41 @@
 html {
   background: #7A47E0;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.nav-bar > .logo {
+  grid-column: span 3;
+}
+
+.nav-bar > .home {
+  grid-column: -3;
+}
+
+.nav-bar > .about {
+  grid-column: -2;
+}
+
+.nav-bar > .contact {
+  grid-column: -1;
+}
+
+.image-intro {
+  max-height: 400px;
+  overflow: hidden;
+  display: grid;
+}
+
+.image-intro > img {
+  max-width: 100%;
+  margin-top: -14%;
+  z-index: -10;
+}
