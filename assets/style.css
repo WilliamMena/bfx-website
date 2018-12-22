@@ -39,3 +39,25 @@ body {
   margin-top: -14%;
   z-index: -10;
 }
+
+
+
+
+/* footer */
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  padding-top: 20px;
+}
+
+.footer .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  padding: 0 20px 0 20px;
+}
