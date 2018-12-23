@@ -12,13 +12,39 @@ html, body {
   height: 100%;
 }
 
+h1 {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, p {
+  color: #456f99;
+}
+
 ul {
   list-style-type: none;
+}
+
+.nav-bar, .brief-intro, .three-column, .footer {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .nav-bar {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  background: #dfe6e9;
+}
+
+.nav-bar a:link, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0984e3;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #e36809;
 }
 
 .nav-bar > .logo {
@@ -49,17 +75,13 @@ ul {
   z-index: -10;
 }
 
-
-.brief-intro, .three-column, .footer {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
 /* brief intro */
 .brief-intro {
   text-align: center;
+  background: #dfe6e9;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
 
 /* 3-column */
 .three-column {
@@ -96,7 +118,7 @@ ul {
 
 :focus{outline: none;}
 
-.footer a:link, .footer a:hover {
+.footer a:link, .footer a:visited {
   color: #0984e3;
   text-decoration: none;
   transition: color 0.3s ease;
