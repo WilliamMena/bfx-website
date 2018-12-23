@@ -153,13 +153,25 @@ ul {
 
 /* tablet and below css */
 @media (max-width: 750px) {
-  .three-column {
+  .three-column, .footer {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .nav-bar, .brief-intro, .three-column, .footer {
+  .nav-bar, .brief-intro, .three-column {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .footer li {
+    padding: 0;
+    margin: 0;
   }
 }
