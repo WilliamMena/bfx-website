@@ -24,7 +24,7 @@ ul {
   list-style-type: none;
 }
 /* @media (min-width: 991.99px) { */
-  .nav-bar, .brief-intro, .three-column, .footer {
+  .nav-bar, .topnav, .brief-intro, .three-column, .footer {
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -51,15 +51,15 @@ ul {
     grid-column: span 3;
   }
 
-  .nav-bar > .home, .home-responsive {
+  .nav-bar > .home {
     grid-column: -3;
   }
 
-  .nav-bar > .about, .about-responsive {
+  .nav-bar > .about {
     grid-column: -2;
   }
 
-  .nav-bar > .contact, .contact-responsive {
+  .nav-bar > .contact {
     grid-column: -1;
   }
 
@@ -69,16 +69,24 @@ ul {
     overflow: hidden;
     border-top: #333;
     background-color: #dfe6e9;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+  }
+
+  .topnav .logo {
+    font-size: 1.2em;
+    color: #456f99;
   }
 
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #0984e3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bold;
   }
 
   .topnav a:hover {
@@ -95,7 +103,23 @@ ul {
     display: none;
   }
 
-  @media screen and (max-width: 600px) {
+  .topnav > .home-responsive {
+    grid-column: -3;
+  }
+
+  .topnav > .about-responsive {
+    grid-column: -2;
+  }
+
+  .topnav > .contact-responsive {
+    grid-column: -1;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    .topnav {
+      display: block;
+    }
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -104,18 +128,18 @@ ul {
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 991.98px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
   }
 
 
@@ -226,7 +250,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .nav-bar, .brief-intro, .three-column {
+  .nav-bar, .topnav, .brief-intro, .three-column {
     padding-left: 20px;
     padding-right: 20px;
   }
