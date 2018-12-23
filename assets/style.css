@@ -73,6 +73,10 @@ ul {
     grid-template-columns: 2fr repeat(4, 1fr);
   }
 
+  .topnav i {
+    font-size: 2em;
+  }
+
   .topnav .logo {
     font-size: 1.2em;
     color: #456f99;
