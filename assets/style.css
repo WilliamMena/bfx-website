@@ -89,7 +89,7 @@ ul {
     display: block;
     color: #0984e3;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
@@ -121,6 +121,12 @@ ul {
     grid-column: -1;
   }
 
+  /* @media screen and (max-width: 426px) {
+    .topnav i {
+      font-size: 2em;
+    }
+  } */
+
   @media screen and (max-width: 991.98px) {
     .topnav {
       display: block;
@@ -132,6 +138,10 @@ ul {
       float: right;
       display: block;
       grid-column: -1;
+    }
+
+    .topnav > .home-responsive {
+      margin-top: 20px;
     }
   }
 
@@ -154,7 +164,6 @@ ul {
         text-align: right;
       }
   }
-
 
 
 
