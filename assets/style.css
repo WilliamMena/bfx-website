@@ -69,6 +69,8 @@ ul {
     overflow: hidden;
     border-top: #333;
     background-color: #dfe6e9;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
   }
@@ -122,6 +124,7 @@ ul {
   @media screen and (max-width: 991.98px) {
     .topnav {
       display: block;
+      /* transform:scaleY(1); */
     }
 
     .topnav a:not(:first-child) {display: none;}
@@ -133,16 +136,22 @@ ul {
   }
 
   @media screen and (max-width: 991.98px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+      position: relative;
+      /* transition:transform 0.3s cubic-bezier(0.16, 0.19, 0.54, 0.99);
+      height: auto;
+      transform:scaleY(1);
+      transform-origin:top; */
+    }
       .topnav.responsive .icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 20px;
+        top: 30px;
       }
       .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
       }
   }
 
