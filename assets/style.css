@@ -121,11 +121,11 @@ ul {
     grid-column: -1;
   }
 
-  /* @media screen and (max-width: 426px) {
+  @media screen and (max-width: 426px) {
     .topnav i {
-      font-size: 2em;
+      font-size: 3em;
     }
-  } */
+  }
 
   @media screen and (max-width: 991.98px) {
     .topnav {
